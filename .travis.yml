@@ -1,0 +1,15 @@
+# Mac OS X (https://github.com/travis-ci-tester/toolchain-table)
+
+language:
+    - objective-c
+
+env:
+    - TOOLCHAIN=default TEST="--test" CONFIG=Release
+
+install:
+    - uname -a
+    - say -v ?
+
+
+script:
+    - defaults read
